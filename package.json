@@ -2,7 +2,6 @@
   "name": "aisalonlp4",
   "version": "1.0.0",
   "description": "未来のスキルを身につけ、キャリアを加速させるAI×プログラミングサロンのネオン色と動的アニメーションを多用したサイバーパンク風ランディングページです。",
-  "main": "index.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
