@@ -1,0 +1,633 @@
+/* Cyberpunk Animations */
+
+/* Matrix Rain Animation */
+@keyframes matrix-scroll {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(100%); }
+}
+
+/* Circuit Pulse Animation */
+@keyframes circuit-pulse {
+    0% { opacity: 0.3; }
+    100% { opacity: 0.8; }
+}
+
+/* Neon Pulse Animation */
+@keyframes neon-pulse {
+    0% { opacity: 0.4; }
+    50% { opacity: 0.8; }
+    100% { opacity: 0.4; }
+}
+
+/* Neon Flicker Animation */
+@keyframes neon-flicker {
+    0%, 100% { 
+        text-shadow: 
+            0 0 5px currentColor,
+            0 0 10px currentColor,
+            0 0 15px currentColor,
+            0 0 20px currentColor;
+    }
+    50% { 
+        text-shadow: 
+            0 0 2px currentColor,
+            0 0 5px currentColor,
+            0 0 8px currentColor,
+            0 0 12px currentColor;
+    }
+}
+
+/* Icon Pulse Animation */
+@keyframes icon-pulse {
+    0%, 100% { 
+        transform: scale(1);
+        text-shadow: 0 0 10px currentColor;
+    }
+    50% { 
+        transform: scale(1.1);
+        text-shadow: 
+            0 0 15px currentColor,
+            0 0 25px currentColor;
+    }
+}
+
+/* Button Glow Animation */
+@keyframes button-glow {
+    0% { 
+        box-shadow: 
+            0 0 10px rgba(255, 0, 127, 0.5),
+            inset 0 0 10px rgba(255, 0, 127, 0.2);
+    }
+    100% { 
+        box-shadow: 
+            0 0 20px rgba(255, 0, 127, 0.8),
+            0 0 30px rgba(255, 0, 127, 0.4),
+            inset 0 0 15px rgba(255, 0, 127, 0.3);
+    }
+}
+
+/* Badge Float Animation */
+@keyframes badge-float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-5px); }
+}
+
+/* Spark Animation */
+@keyframes spark {
+    0%, 100% { 
+        transform: rotate(0deg) scale(1);
+        filter: brightness(1);
+    }
+    25% { 
+        transform: rotate(90deg) scale(1.2);
+        filter: brightness(1.5);
+    }
+    50% { 
+        transform: rotate(180deg) scale(1);
+        filter: brightness(1);
+    }
+    75% { 
+        transform: rotate(270deg) scale(1.2);
+        filter: brightness(1.5);
+    }
+}
+
+/* Title Slide In Animation */
+@keyframes title-slide-in {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* CTA Pulse Animation */
+@keyframes cta-pulse {
+    0%, 100% { 
+        transform: scale(1);
+        box-shadow: 0 0 15px rgba(255, 0, 127, 0.5);
+    }
+    50% { 
+        transform: scale(1.02);
+        box-shadow: 
+            0 0 25px rgba(255, 0, 127, 0.7),
+            0 0 35px rgba(255, 0, 127, 0.3);
+    }
+}
+
+/* Stat Float Animation */
+@keyframes stat-float {
+    0%, 100% { 
+        transform: translateY(0px);
+        box-shadow: 0 5px 15px rgba(0, 255, 255, 0.2);
+    }
+    50% { 
+        transform: translateY(-8px);
+        box-shadow: 0 15px 25px rgba(0, 255, 255, 0.4);
+    }
+}
+
+/* Float Orbit Animation */
+@keyframes float-orbit {
+    0% { 
+        transform: rotate(0deg) translateX(100px) rotate(0deg);
+        box-shadow: 0 0 10px currentColor;
+    }
+    50% {
+        box-shadow: 0 0 20px currentColor;
+    }
+    100% { 
+        transform: rotate(360deg) translateX(100px) rotate(-360deg);
+        box-shadow: 0 0 10px currentColor;
+    }
+}
+
+/* Card Glow Animation */
+@keyframes card-glow {
+    0% { 
+        border-color: rgba(255, 0, 127, 0.2);
+        box-shadow: 0 0 10px rgba(255, 0, 127, 0.1);
+    }
+    100% { 
+        border-color: rgba(255, 0, 127, 0.4);
+        box-shadow: 0 0 20px rgba(255, 0, 127, 0.3);
+    }
+}
+
+/* Icon Spin Animation */
+@keyframes icon-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Timeline Glow Animation */
+@keyframes timeline-glow {
+    0% { 
+        box-shadow: 
+            0 0 5px rgba(0, 255, 255, 0.5),
+            0 0 10px rgba(255, 0, 127, 0.3);
+    }
+    100% { 
+        box-shadow: 
+            0 0 15px rgba(0, 255, 255, 0.8),
+            0 0 25px rgba(255, 0, 127, 0.6);
+    }
+}
+
+/* Timeline Pulse Animation */
+@keyframes timeline-pulse {
+    0%, 100% { 
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    }
+    50% { 
+        transform: scale(1.1);
+        box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+    }
+}
+
+/* Content Slide In Animation */
+@keyframes content-slide-in {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Highlight Pulse Animation */
+@keyframes highlight-pulse {
+    0%, 100% { 
+        border-color: rgba(255, 255, 0, 0.3);
+        box-shadow: 0 0 10px rgba(255, 255, 0, 0.2);
+    }
+    50% { 
+        border-color: rgba(255, 255, 0, 0.6);
+        box-shadow: 0 0 20px rgba(255, 255, 0, 0.4);
+    }
+}
+
+/* Capability Float Animation */
+@keyframes capability-float {
+    0%, 100% { 
+        transform: translateY(0px);
+        box-shadow: 0 5px 15px rgba(0, 255, 127, 0.2);
+    }
+    50% { 
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 255, 127, 0.4);
+    }
+}
+
+/* Arrow Blink Animation */
+@keyframes arrow-blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0.5; }
+}
+
+/* Field Hover Animation */
+@keyframes field-hover {
+    0% { 
+        transform: translateY(0px);
+        border-color: rgba(255, 0, 127, 0.2);
+    }
+    100% { 
+        transform: translateY(-5px);
+        border-color: rgba(255, 0, 127, 0.4);
+    }
+}
+
+/* Field Icon Spin Animation */
+@keyframes field-icon-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Transform Glow Animation */
+@keyframes transform-glow {
+    0% { 
+        border-color: rgba(0, 255, 255, 0.3);
+        box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+    }
+    100% { 
+        border-color: rgba(0, 255, 255, 0.6);
+        box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
+    }
+}
+
+/* Number Pulse Animation */
+@keyframes number-pulse {
+    0%, 100% { 
+        transform: scale(1);
+        text-shadow: 0 0 10px currentColor;
+    }
+    50% { 
+        transform: scale(1.05);
+        text-shadow: 
+            0 0 15px currentColor,
+            0 0 25px currentColor;
+    }
+}
+
+/* Check Glow Animation */
+@keyframes check-glow {
+    0%, 100% { 
+        color: var(--neon-green);
+        text-shadow: 0 0 5px currentColor;
+    }
+    50% { 
+        color: var(--neon-cyan);
+        text-shadow: 0 0 10px currentColor;
+    }
+}
+
+/* Benefit Float Animation */
+@keyframes benefit-float {
+    0%, 100% { 
+        transform: translateY(0px) rotate(0deg);
+    }
+    33% { 
+        transform: translateY(-5px) rotate(1deg);
+    }
+    66% { 
+        transform: translateY(5px) rotate(-1deg);
+    }
+}
+
+/* Benefit Icon Bounce Animation */
+@keyframes benefit-icon-bounce {
+    0%, 100% { 
+        transform: translateY(0px) scale(1);
+    }
+    50% { 
+        transform: translateY(-10px) scale(1.1);
+    }
+}
+
+/* Feature Glow Animation */
+@keyframes feature-glow {
+    0% { 
+        border-color: rgba(128, 0, 255, 0.3);
+        box-shadow: 0 0 15px rgba(128, 0, 255, 0.2);
+    }
+    100% { 
+        border-color: rgba(128, 0, 255, 0.6);
+        box-shadow: 0 0 30px rgba(128, 0, 255, 0.4);
+    }
+}
+
+/* Number Float Animation */
+@keyframes number-float {
+    0%, 100% { 
+        transform: translateY(0px);
+        opacity: 0.7;
+    }
+    50% { 
+        transform: translateY(-5px);
+        opacity: 1;
+    }
+}
+
+/* Feature Icon Rotate Animation */
+@keyframes feature-icon-rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Bullet Pulse Animation */
+@keyframes bullet-pulse {
+    0%, 100% { 
+        transform: scale(1);
+        color: var(--neon-cyan);
+    }
+    50% { 
+        transform: scale(1.2);
+        color: var(--neon-pink);
+    }
+}
+
+/* Achievement Glow Animation */
+@keyframes achievement-glow {
+    0% { 
+        border-color: rgba(255, 255, 0, 0.3);
+        box-shadow: 0 0 10px rgba(255, 255, 0, 0.2);
+    }
+    100% { 
+        border-color: rgba(255, 255, 0, 0.6);
+        box-shadow: 0 0 20px rgba(255, 255, 0, 0.4);
+    }
+}
+
+/* Instructor Animations */
+@keyframes instructor-glow {
+    0% { 
+        border-color: rgba(0, 255, 255, 0.3);
+        box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+    }
+    100% { 
+        border-color: rgba(0, 255, 255, 0.6);
+        box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
+    }
+}
+
+@keyframes avatar-pulse {
+    0%, 100% { 
+        transform: scale(1);
+        box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    }
+    50% { 
+        transform: scale(1.05);
+        box-shadow: 0 0 30px rgba(0, 255, 255, 0.8);
+    }
+}
+
+@keyframes skill-tag-float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-3px); }
+}
+
+/* Streaming Animations */
+@keyframes streaming-pulse {
+    0% { 
+        border-color: rgba(255, 0, 127, 0.3);
+        box-shadow: 0 0 15px rgba(255, 0, 127, 0.2);
+    }
+    100% { 
+        border-color: rgba(255, 0, 127, 0.6);
+        box-shadow: 0 0 25px rgba(255, 0, 127, 0.4);
+    }
+}
+
+/* Pricing Animations */
+@keyframes pricing-glow {
+    0% { 
+        border-color: rgba(0, 255, 127, 0.4);
+        box-shadow: 0 0 20px rgba(0, 255, 127, 0.3);
+    }
+    100% { 
+        border-color: rgba(0, 255, 127, 0.7);
+        box-shadow: 
+            0 0 30px rgba(0, 255, 127, 0.5),
+            0 0 50px rgba(0, 255, 127, 0.2);
+    }
+}
+
+@keyframes price-pulse {
+    0%, 100% { 
+        transform: scale(1);
+        color: var(--neon-green);
+    }
+    50% { 
+        transform: scale(1.05);
+        color: var(--neon-cyan);
+    }
+}
+
+@keyframes check-bounce {
+    0%, 100% { transform: translateX(0px); }
+    50% { transform: translateX(3px); }
+}
+
+/* Curriculum Animations */
+@keyframes curriculum-hover {
+    0% { 
+        transform: translateY(0px);
+        border-color: rgba(0, 255, 255, 0.2);
+    }
+    100% { 
+        transform: translateY(-5px);
+        border-color: rgba(0, 255, 255, 0.5);
+    }
+}
+
+/* Case Studies Animations */
+@keyframes case-float {
+    0%, 100% { 
+        transform: translateY(0px);
+        box-shadow: 0 5px 15px rgba(128, 0, 255, 0.2);
+    }
+    50% { 
+        transform: translateY(-8px);
+        box-shadow: 0 15px 25px rgba(128, 0, 255, 0.4);
+    }
+}
+
+/* Process Animations */
+@keyframes process-step-glow {
+    0% { 
+        box-shadow: 0 0 15px rgba(0, 255, 127, 0.3);
+    }
+    100% { 
+        box-shadow: 0 0 25px rgba(0, 255, 127, 0.6);
+    }
+}
+
+@keyframes step-number-rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* FAQ Animations */
+@keyframes faq-item-hover {
+    0% { 
+        border-color: rgba(255, 0, 127, 0.2);
+    }
+    100% { 
+        border-color: rgba(255, 0, 127, 0.5);
+    }
+}
+
+@keyframes chevron-rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(180deg); }
+}
+
+/* Final CTA Animations */
+@keyframes final-cta-pulse {
+    0%, 100% { 
+        transform: scale(1);
+        box-shadow: 
+            0 0 20px rgba(0, 255, 127, 0.5),
+            0 0 40px rgba(0, 255, 127, 0.3);
+    }
+    50% { 
+        transform: scale(1.05);
+        box-shadow: 
+            0 0 30px rgba(0, 255, 127, 0.7),
+            0 0 60px rgba(0, 255, 127, 0.5);
+    }
+}
+
+@keyframes rocket-launch {
+    0%, 100% { 
+        transform: translateY(0px) rotate(0deg);
+    }
+    25% { 
+        transform: translateY(-5px) rotate(-10deg);
+    }
+    50% { 
+        transform: translateY(-10px) rotate(0deg);
+    }
+    75% { 
+        transform: translateY(-5px) rotate(10deg);
+    }
+}
+
+/* Scroll Reveal Animations */
+@keyframes fade-in-up {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-in-right {
+    0% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Glitch Effects */
+@keyframes glitch {
+    0%, 100% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(-2px, -2px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+}
+
+@keyframes text-flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
+}
+
+/* Data Stream Animation */
+@keyframes data-stream {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100vw); }
+}
+
+/* Hologram Effect */
+@keyframes hologram {
+    0%, 100% { 
+        opacity: 0.8;
+        transform: scale(1);
+    }
+    50% { 
+        opacity: 1;
+        transform: scale(1.02);
+    }
+}
+
+/* Energy Pulse */
+@keyframes energy-pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 255, 255, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(0, 255, 255, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 255, 255, 0);
+    }
+}
+
+/* Particle Effect */
+@keyframes particle-float {
+    0%, 100% {
+        transform: translateY(0px) translateX(0px) rotate(0deg);
+    }
+    33% {
+        transform: translateY(-20px) translateX(10px) rotate(120deg);
+    }
+    66% {
+        transform: translateY(10px) translateX(-15px) rotate(240deg);
+    }
+}
+
+/* Scan Line Effect */
+@keyframes scan-line {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(100vh); }
+}
+
+/* Cyberpunk Grid */
+@keyframes cyber-grid {
+    0% { 
+        background-position: 0 0, 0 0;
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 0.7;
+    }
+    100% { 
+        background-position: 50px 50px, 50px 50px;
+        opacity: 0.3;
+    }
+}
